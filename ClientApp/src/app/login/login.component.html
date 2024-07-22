@@ -1,0 +1,59 @@
+<section class="auth-page-wrapper position-relative d-flex align-items-center justify-content-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 float-lg-left mt-2">
+        <div class="card auth-card h-100 border-0 shadow-none d-none d-sm-block mb-0">
+          <img src="assets/images/logo-details-info.svg" alt="login-img">
+        </div>
+      </div>
+      <div class="col-lg-4 justify-content-center">
+        <div class="login-card card mb-0">
+          <div class="row g-0 align-items-center">
+            <div class="col-xxl-11 mx-auto">
+              <div class="card mb-0 border-0 shadow-none mb-0">
+                <div class="card-body">
+                  <div class="text-center mt-3">
+                    <h5>Welcome</h5>
+                    <p class="text-less-imp mt-2">Sign in to {{tenantTitle || 'continue'}}.</p>
+                  </div>
+                  <div class="p-2 mt-5">
+                    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                      <div class="form-group">
+                        <kendo-formfield class="d-block mb-3">
+                          <kendo-floatinglabel text="User name" style="width: 100%;">
+                            <input kendoTextBox type="text" formControlName="userName" [required]="true" />
+                          </kendo-floatinglabel>
+                        </kendo-formfield>
+                      </div>
+
+                      <div class="form-group">
+                        <kendo-formfield class="d-block mb-3">
+                          <kendo-floatinglabel text="Password" style="width: 100%;">
+                            <input kendoTextBox class="password-input" [type]="textboxType" #password
+                              formControlName="password" [required]="true" />
+                            <button type="button" class="password-hide-btn" kendoButton (click)="onClick()">
+                              <i [ngClass]="!hide ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
+                            </button>
+                          </kendo-floatinglabel>
+                        </kendo-formfield>
+                      </div>
+                      <div class="form-group d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                          <!-- <mat-checkbox class="mat-check-box-field">Remember me</mat-checkbox> -->
+                          <kendo-checkbox #checkbox></kendo-checkbox>
+                          <kendo-label class="k-checkbox-label" [for]="checkbox" text="Remember me"></kendo-label>
+                        </div>
+                        <button type="button" class="cz-link-btn">Forgot Password</button>
+                      </div>
+                      <button class="ec-primary-btn w-100" type="submit">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

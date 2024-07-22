@@ -1,0 +1,54 @@
+- dataType: section
+  label: Section
+  showTitle: true
+  column: 6
+  fields:
+    - dataType: tab
+      column: 12
+      fields:
+        - label: Tab 1
+          dataType: section
+          column: 12
+          showTitle: true
+          fields:
+            - fieldName: Name
+              dataType: string
+              label: Name
+              column: 12
+            - fieldName: CreatedBy
+              dataType: guid
+              label: CreatedBy
+              column: 12
+            - fieldName: UpdatedOn
+              dataType: datetime
+              label: UpdatedOn
+              column: 12
+          icon: fab fa-amilia
+  icon: fab fa-angular
+- dataType: section
+  label: Section
+  showTitle: true
+  column: 6
+  fields:
+    - dataType: tab
+      column: 12
+      fields:
+        - label: Tab 1
+          dataType: section
+          column: 12
+          showTitle: true
+          fields:
+            - fieldName: TenantId
+              dataType: guid
+              label: TenantId
+              column: 12
+            - fieldName: UpdatedBy
+              dataType: guid
+              label: UpdatedBy
+              column: 12
+            - fieldName: CreatedOn
+              dataType: datetime
+              label: CreatedOn
+              column: 12
+          icon: fab fa-confluence
+  icon: fab fa-artstation

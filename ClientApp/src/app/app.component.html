@@ -1,0 +1,10 @@
+<div class="loader-container">
+    <kendo-progressbar *ngIf="loaderService.loadingSubject | async" 
+      class="loader-bar" 
+      [animation]="true"
+      [value]="100"
+      [indeterminate]="true"
+      [progressCssClass]="'linear-progress__bar-inner'">
+    </kendo-progressbar>
+  <router-outlet></router-outlet>
+</div>

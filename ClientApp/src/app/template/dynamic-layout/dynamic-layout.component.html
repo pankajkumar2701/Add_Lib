@@ -1,0 +1,7 @@
+<div class="dynamic-layout-container">
+    <div class="row">
+        <codezen-ui-renderer #layoutRenderer *ngIf="!isDropDownLoading" [form]="form" [layout]="formFields"
+            [selectorPrefix]="selectorPrefix" [rendererType]="rendererType">
+        </codezen-ui-renderer>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+@import '../../helpers/variables';
+
+:root {
+    --kendo-color-primary-on-surface: var(--primary-color-light);
+    --kendo-color-primary: var(--primary-color);
+    --kendo-color-primary-hover: var(--primary-hover-color);
+    --kendo-color-primary-active: var(--primary-color);
+}
+
+.k-floating-label {
+    color: var(--primary-label-color) !important;
+    font-weight: normal;
+    font-size: 14px !important;
+}
+
+.k-label {
+    color: var(--primary-label-color) !important;
+}
+
+.k-floating-label-container {
+    padding-top: 10px;
+    min-height: 50px;
+    background-color: var(--default-card-bg);
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 5px;
+}
+
+.k-floating-label {
+    transform: translateY(-40%) scale(1) !important;
+}
+
+.k-floating-label-container:not(.k-empty) > .k-floating-label,
+.k-floating-label-container.k-focus > .k-floating-label {
+    transform: translateY(0%) scale(0.82) !important;
+    margin-left: 9px;
+}
+
+.codezen-section-container {
+    margin: 0px 0px 15px 0px;
+    border: 1px solid var(--primary-border-color);
+    background-color: var(--default-card-bg);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-3);
+    padding: 15px 20px;
+}
+
+.codezen-section-title {
+    padding: 0px;
+    line-height: 1.2;
+    position: relative;
+    font-size: 0.975rem;
+    font-weight: 500;
+    color: var(--primary-header-color);
+    margin-bottom: 15px;
+}
+
+.k-input-solid,
+.k-input-solid:hover,
+.k-picker-solid,
+.k-picker-solid:hover,
+.k-button-solid-base,
+.k-input-solid:focus-within {
+    background-color: var(--default-card-bg);
+    border-color: transparent !important;
+    box-shadow: none !important;
+    margin-top: 3px;
+}
